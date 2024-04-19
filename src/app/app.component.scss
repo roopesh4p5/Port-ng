@@ -1,0 +1,13 @@
+.home-section {
+    background: #e4e9f7;
+    min-height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+.home-section .text {
+    display: inline-block;
+    color: #11101d;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 18px;
+  }

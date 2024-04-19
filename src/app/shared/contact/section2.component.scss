@@ -1,0 +1,81 @@
+a {
+    color: #f1ce64;
+    font-size: 50%; /* Decrease font size by 50% */
+  }
+  
+  .share {
+    position: sticky;
+    width: 200px; /* Decrease width by 50% */
+    left: 3%; /* Adjust position accordingly */
+    top: 10px; /* Adjust position accordingly */
+  }
+  
+  
+  .share span {
+    width: 200px; /* Decrease width by 50% */
+    text-align: center;
+    line-height: 40px; /* Decrease line height by 50% */
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: -50px; /* Adjust margin accordingly */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .share nav {
+    font-size: 0; /* Hide navigation text */
+  }
+  
+  .share a {
+    line-height: 40px; /* Decrease line height by 50% */
+    width: 40px; /* Decrease width by 50% */
+    text-align: center;
+    display: inline-block;
+    background-color: #ffffff;
+    // color: #ffffff;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -10px; /* Adjust margin accordingly */
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.1); /* Adjust shadow accordingly */
+  }
+  .share a:nth-child(1) {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-left: 0;
+  }
+  .share a:nth-child(1):hover {
+    background-color: #61c5ec;
+  }
+  .share a:nth-child(2):hover {
+    background-color: #3B5998;
+  }
+  .share a:nth-child(3):hover {
+    background-color: #ea4335;
+  }
+  .share a:nth-child(4) {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 0;
+  }
+  .share a:nth-child(4):hover {
+    background-color: #000000;
+  }
+  
+  .share:hover span, .share.hover span {
+    opacity: 0;
+  }
+  
+  .share:hover a, .share.hover a {
+    border-radius: 50%;
+    margin: 0 5px; /* Adjust margin accordingly */
+    font-size: 14px; /* Decrease font size by 50% */
+  }
+  
+  .share:hover a:hover, .share.hover a:hover {
+    color: #fff;
+  }
+  

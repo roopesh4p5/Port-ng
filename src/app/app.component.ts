@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { AppService } from './services/app.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+  isMobileScreen: any;
+  constructor(public navbarService: AppService) {}
+
+  ngOnInit(): void {
+    this.isMobileScreen=this.navbarService.MobileScreen()
+  }
 }
