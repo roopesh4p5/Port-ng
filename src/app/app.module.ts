@@ -13,6 +13,7 @@ import { PopupComponent } from './shared/popup/popup.component';
 import { NavFooterComponent } from './shared/nav-footer/nav-footer.component';
 import { PagenotfoundComponent } from './shared/pagenotfound/pagenotfound.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { EducationComponent } from './portfolio/education/education.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     NavFooterComponent,
     PagenotfoundComponent,
     PortfolioComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,

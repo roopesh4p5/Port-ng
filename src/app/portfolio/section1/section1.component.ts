@@ -7,32 +7,31 @@ import { PopupComponent } from 'src/app/shared/popup/popup.component';
   styleUrls: ['./section1.component.scss']
 })
 export class Section1Component {
-  constructor(public dialog: MatDialog) {}
-  isExpanded: string | null = null;
-
-  expandImage(image: string) {
-    this.isExpanded = image;
-  }
-
-  resetImageSize(image: string) {
-    if (this.isExpanded === image) {
-      this.isExpanded = null;
+  interests: any[] = [
+    {
+      title: 'Drawing',
+      description: 'I have a passion for drawing and enjoy exploring various techniques and mediums to express my creativity.',
+      imagePath: './../../../assets/drawing.jpg'
+    },
+    {
+      title: 'Raspberry Pi and Arduino',
+      description: 'I\'m deeply fascinated by Raspberry Pi and Arduino boards, leveraging them to develop innovative projects, experiment with different operating systems, and craft custom solutions.',
+      imagePath: './../../../assets/raspberry.png'
+    },
+    {
+      title: 'CCTV Cameras',
+      description: 'My expertise extends to CCTV cameras, encompassing their setup, configuration, and optimization to ensure effective surveillance solutions.',
+      imagePath: './../../../assets/cctv.png'
+    },
+    {
+      title: 'Electrical Work',
+      description: 'With hands-on experience in electrical work, including soldering and troubleshooting, I\'m adept at handling various electrical tasks with precision and safety.',
+      imagePath: './../../../assets/electric.png'
+    },
+    {
+      title: 'Exploring Niche Technologies',
+      description: 'I enjoy delving into unconventional technologies and experimenting with unconventional gadgets, leveraging them to expand my knowledge and fuel my curiosity.',
+      imagePath: './../../../assets/explore.jpg'
     }
-  }
-
-
-openPopup(): void {
-  const dialogRef = this.dialog.open(PopupComponent, {
-    minWidth: '50vw', // Set the width to a larger value
-    maxWidth:'90vw',
-    minHeight: '60vh', // Set the height to a larger value
-    maxHeight:'90vh',
-    panelClass: 'my-dialog-container', // Apply custom CSS class if needed
-});
-    // You can subscribe to any output data or events from the popup component.
-    dialogRef.afterClosed().subscribe(result => {
-        console.log('The dialog was closed');
-        // Do something with the result if needed
-    });
-}
+  ];
 }

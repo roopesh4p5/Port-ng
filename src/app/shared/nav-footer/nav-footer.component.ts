@@ -12,7 +12,7 @@ export class NavFooterComponent {
 
   setActive(index: number) {
     this.activeIndex = index;
-    this.router.navigate(['./home'])
+    
   }
 
 

@@ -1,30 +1,36 @@
-<section class="landing-section h-[90vh] py-20 md:py-64">
-
-    <div class="container  mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2  items-center">
-            <div class="order-2  md:pl-[15vw] pl-0 md:order-1">
-                <h1
-                class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 "
-                >
-                I'M ROOPESH 
-            </h1>
-            <p
-            class="text-lg text-gray-600 mb-8 "
-            >
-            A skilled Angular developer with a passion for creating innovative
-            web applications.
+<section class="landing-section h-[90vh] py-20 md:py-64 relative overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+      <div class="order-2 md:pl-[15vw] pl-0 md:order-1">
+        <h1
+          class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 animate__animated animate__fadeInDown"
+        >
+          I'M ROOPESH
+        </h1>
+        <p
+          class="text-lg text-gray-600 mb-8 animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          A skilled Angular developer with a passion for creating innovative web
+          applications.
         </p>
-        <div>
-            <app-section2></app-section2>
-           
+        <div class="animate__animated animate__fadeInUp animate__delay-2s">
+          <app-section2></app-section2>
         </div>
       </div>
       <div class="order-1 md:order-2">
         <div
-          class="landing-image w-full h-64 md:h-96 bg-cover bg-center rounded-lg "
-          
+          class="landing-image w-full h-64 md:h-96 bg-cover bg-center rounded-lg animate__animated animate__fadeInRight animate__delay-3s"
+          style="
+            background-image: url('./../../../assets/landing.png');
+          "
         ></div>
       </div>
     </div>
+    <div
+      class="animate__animated animate__fadeInUp animate__delay-4s absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent"
+    ></div>
+    <div
+      class="animate__animated animate__fadeInUp animate__delay-5s absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent"
+    ></div>
   </div>
 </section>

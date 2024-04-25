@@ -1,34 +1,12 @@
-<div class="flex justify-center">
-    <div class="container">
-        <div class="box" style="--clr:#89ec5b;">
-            <div class="content">
-                <div class="icon">brush</div>
-                <div class="text">
-                    <h3>Designing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, qui.</p>
-                    <a (click)="openPopup()" >Read More</a>
-                </div>
-            </div>
+<div class="p-6  md:mx-52  rounded-lg sm:mx-0">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-indigo-800">Interests and Hobbies</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-8">
+      <div *ngFor="let interest of interests" class="bg-gradient-to-r from-indigo-100 to-purple-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+        <div class="md:w-full md:h-64 mb-4 overflow-hidden rounded-md">
+          <img [src]="interest.imagePath" class="object-cover w-full h-full" [alt]="interest.title">
         </div>
-        <div class="box" style="--clr:#eb5ae5;">
-            <div class="content">
-                <div class="icon">slash</div>
-                <div class="text">
-                    <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, qui.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="box" style="--clr:#5b98eb;">
-            <div class="content">
-                <div class="icon">search</div>
-                <div class="text">
-                    <h3>SEO</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, qui.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
+        <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-indigo-800">{{ interest.title }}</h3>
+        <p class="text-gray-700">{{ interest.description }}</p>
+      </div>
     </div>
-</div>
+  </div>

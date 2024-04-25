@@ -14,4 +14,6 @@ export class AppComponent {
   ngOnInit(): void {
     this.isMobileScreen=this.navbarService.MobileScreen()
   }
+
+
 }

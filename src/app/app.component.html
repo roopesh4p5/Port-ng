@@ -1,4 +1,5 @@
 <app-navbar *ngIf="!isMobileScreen"></app-navbar>
 <section [ngClass]="isMobileScreen ? 'w-screen' : 'w-[calc(100%-78px)] left-[78px]'" class="home-section relative   top-0">
   <router-outlet></router-outlet>
+  <app-nav-footer *ngIf="isMobileScreen"></app-nav-footer>
 </section>
