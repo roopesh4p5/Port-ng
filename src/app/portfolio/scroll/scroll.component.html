@@ -1,0 +1,13 @@
+
+    <div class="  flex justify-center  md:rotate-[-90deg] sm:rotate-0  max-w-[120vh] overflow-visible py-3 align-items-center flex-col w-full">
+      <div *ngFor="let row of rows; let i = index" class="loop-slider" [style]="getRowStyle(i)">
+        <div class="inner">
+          <div *ngFor="let tag of row" class="tag">
+            <span>#</span> {{ tag }}
+          </div>
+        </div>
+      </div>
+      <div class="fade"></div>
+    </div>
+
+  

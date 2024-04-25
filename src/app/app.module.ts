@@ -14,6 +14,11 @@ import { NavFooterComponent } from './shared/nav-footer/nav-footer.component';
 import { PagenotfoundComponent } from './shared/pagenotfound/pagenotfound.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EducationComponent } from './portfolio/education/education.component';
+import { AboutComponent } from './portfolio/about/about.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { ScrollComponent } from './portfolio/scroll/scroll.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +32,17 @@ import { EducationComponent } from './portfolio/education/education.component';
     PagenotfoundComponent,
     PortfolioComponent,
     EducationComponent,
+    AboutComponent,
+    ScrollComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

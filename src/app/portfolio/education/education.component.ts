@@ -29,4 +29,5 @@ export class EducationComponent {
       board: 'Karnataka board',
     },
   ];
+  
 }

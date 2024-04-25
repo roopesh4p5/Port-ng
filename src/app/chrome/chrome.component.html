@@ -1,1 +1,42 @@
-<p>chrome works!</p>
+<!-- app.component.html -->
+<div class="flex flex-col items-center justify-between h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black px-8 py-4">
+    <div class="flex flex-col items-center">
+      <h1 class="text-4xl font-bold text-white mb-4">My Chrome Homepage</h1>
+      <div class="flex items-center bg-gray-700 rounded-full px-4 py-2 mb-8">
+        <input
+          class="bg-transparent outline-none text-white mr-2"
+          type="text"
+          placeholder="Search Google"
+          #searchInput
+        />
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          (click)="searchGoogle(searchInput.value)"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  
+    <div class="flex justify-center space-x-8 mb-8">
+      <a href="https://www.youtube.com" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-4 rounded-full">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-4 px-4 rounded-full">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </a>
+      <a href="https://www.example.com" class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-full">
+        <i class="fas fa-file fa-2x"></i>
+      </a>
+      <a href="https://www.example.com" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-4 px-4 rounded-full">
+        <i class="fas fa-file fa-2x"></i>
+      </a>
+      <a href="https://www.example.com" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-4 px-4 rounded-full">
+        <i class="fas fa-file fa-2x"></i>
+      </a>
+    </div>
+  
+    <div class="glass rounded-lg p-4">
+      <div class="text-4xl font-bold text-white">{{ currentTime }}</div>
+    </div>
+  </div>
