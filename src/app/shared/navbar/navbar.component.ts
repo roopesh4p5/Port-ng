@@ -14,11 +14,10 @@ export class NavbarComponent {
       this.isSidebarOpen = !this.isSidebarOpen;
     }
   
-    activeIndex: number =1;
-  
-    setActive(index: number) {
-      this.activeIndex = index;
-      this.router.navigate(['./home'])
+    closeWindow() {
+      window.close(); // Close the current window
     }
+   
+    
 }
 

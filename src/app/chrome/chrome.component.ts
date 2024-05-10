@@ -30,4 +30,5 @@ export class ChromeComponent implements OnInit, OnDestroy {
   searchGoogle(query: string) {
     window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
   }
+  
 }

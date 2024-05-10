@@ -220,6 +220,12 @@
     width: calc(100% - 250px);
   }
   
+  .active {
+    border:2px solid #f0f0f0; /* Change to your desired active state background color */
+    color: #333; /* Change to your desired active state text color */
+    border-radius:14px ;
+  }
+  
 /* Your sidebar CSS code here */
 @media (max-width: 420px) {
     .sidebar li .tooltip {
